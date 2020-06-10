@@ -1,0 +1,39 @@
+﻿<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Model Viewer Demo</title>
+
+  <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+  <style>
+  model-viewer{
+  width:600px;
+  height:800px;
+  margin:0 auto;
+  }
+  </style>
+
+</head>
+
+<body>
+  <!--<script src="js/scripts.js"></script>-->
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+<!-- Use it like any other HTML element -->
+<model-viewer src="./CoconutPalmTree.gltf" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer>
+<model-viewer ar camera-controls autoplay ios-src="./Bee.glb"  src="./Bee.glb" alt="An animated 3D model of a robot">
+
+<!--
+<model-viewer ar camera-controls autoplay ios-src="./Bee.glb" src="./Bee.glb" alt="A 3D model of an astronaut">
+      <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
+          👋 Activate AR
+      </button>
+</model-viewer>
+
+<model-viewer src="./Bee.glb" autoplay ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" camera-controls alt="A 3D model of an astronaut" ios-src="./Bee.glb"></model-viewer>
+-->
+</body>
+</html>
